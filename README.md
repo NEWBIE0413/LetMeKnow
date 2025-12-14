@@ -9,38 +9,62 @@
 - 같은 문단 내 다른 단어 클릭 시 캐시된 번역 즉시 표시
 - "자세히 보기"로 맥락 기반 상세 설명 확인
 
+<details>
+<summary>📸 스크린샷 보기</summary>
+
 ![단어 번역 팝업](screenshots/word-popup.png)
 
 ![단어 상세 설명](screenshots/word-detail.png)
+
+</details>
 
 ### 2. 문단 번역 보기
 문단 끝 아이콘 클릭 → "번역 보기"
 - **단어/표현 매핑**: 영어-한국어 청크 단위 대응
 - **자연스러운 번역**: 전체 문단의 자연스러운 의역
 
+<details>
+<summary>📸 스크린샷 보기</summary>
+
 ![번역 보기](screenshots/translation-view.png)
+
+</details>
 
 ### 3. 번역 연습 모드
 문단 끝 아이콘 클릭 → "번역 해보기"
 - 직접 번역을 입력하고 AI 피드백 받기
 - 문법, 어색한 표현, 개선점 상세 분석
 
+<details>
+<summary>📸 스크린샷 보기</summary>
+
 ![번역 연습 피드백](screenshots/practice-feedback.png)
+
+</details>
 
 ## 설치 방법
 
-### 1. 저장소 클론
+### A. 릴리즈 다운로드 (권장)
+
+1. [Releases](https://github.com/NEWBIE0413/LetMeKnow/releases) 페이지에서 최신 버전의 `LetMeKnow-v*.zip` 다운로드
+2. 압축 해제
+3. Chrome 브라우저에서 `chrome://extensions` 접속
+4. 우측 상단 **"개발자 모드"** 활성화
+5. **"압축해제된 확장 프로그램을 로드합니다"** 클릭
+6. 압축 해제한 폴더 선택
+
+### B. 소스 코드에서 설치 (개발자용)
+
+1. 저장소 클론
 ```bash
 git clone https://github.com/NEWBIE0413/LetMeKnow.git
 ```
+2. Chrome 브라우저에서 `chrome://extensions` 접속
+3. 우측 상단 **"개발자 모드"** 활성화
+4. **"압축해제된 확장 프로그램을 로드합니다"** 클릭
+5. 클론한 `LetMeKnow` 폴더 선택
 
-### 2. Chrome에 확장 프로그램 로드
-1. Chrome 브라우저에서 `chrome://extensions` 접속
-2. 우측 상단 **"개발자 모드"** 활성화
-3. **"압축해제된 확장 프로그램을 로드합니다"** 클릭
-4. 클론한 `LetMeKnow` 폴더 선택
-
-### 3. API 키 설정
+### API 키 설정
 1. [OpenRouter](https://openrouter.ai/keys)에서 API 키 발급
 2. Chrome 툴바의 LetMeKnow 아이콘 클릭
 3. API 키 입력 후 저장
