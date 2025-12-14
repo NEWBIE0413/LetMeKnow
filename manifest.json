@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "LetMeKnow",
+  "version": "1.0.0",
+  "description": "영어 아티클을 읽으며 영어 실력을 키우세요. AI 기반 맥락 번역과 번역 연습 기능을 제공합니다.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://openrouter.ai/*"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "service_worker": "background/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "utils/cache.js",
+        "content/sentenceDetector.js",
+        "content/selectionHandler.js",
+        "content/translationUI.js",
+        "content/practiceMode.js",
+        "content/content.js"
+      ],
+      "css": ["styles/content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

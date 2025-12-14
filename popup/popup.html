@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LetMeKnow 설정</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>LetMeKnow</h1>
+    <p class="subtitle">영어 아티클 학습 도우미</p>
+
+    <div class="form-group">
+      <label for="apiKey">OpenRouter API Key</label>
+      <input type="password" id="apiKey" placeholder="sk-or-v1-..." />
+      <a href="https://openrouter.ai/keys" target="_blank" class="help-link">API 키 발급받기 →</a>
+    </div>
+
+    <button id="saveBtn" class="save-btn">저장</button>
+
+    <div id="status" class="status"></div>
+
+    <div class="divider"></div>
+
+    <div class="info">
+      <h3>사용법</h3>
+      <ul>
+        <li><strong>단어 선택:</strong> 영어 단어를 드래그하면 팝업 메뉴가 나타납니다.</li>
+        <li><strong>뜻 보기:</strong> AI가 맥락을 고려해 정확한 뜻을 알려줍니다.</li>
+        <li><strong>번역 연습:</strong> 문장 끝의 버튼을 눌러 직접 번역해보세요.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
